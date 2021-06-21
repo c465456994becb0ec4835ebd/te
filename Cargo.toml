@@ -1,0 +1,12 @@
+[package]
+name = "te"
+version = "0.1.0"
+edition = "2018"
+
+[profile.release]
+lto = true
+
+[dependencies]
+csv = "1.1.6"
+rust_decimal = { version = "1.14", features = ["serde-str"] }
+serde = { version = "1.0.126", features = ["derive"] }
